@@ -1,23 +1,17 @@
 "use strict";
 
-// const userAge = confirm("Are you 18?"); // brauzerga alert chiqaradi.
-// console.log(userAge);
+const numberOfNews = +prompt("Siz qancha yangilik ko'rdingiz?");
 
-// const userName = prompt("ismingiz kim?", "Ismingizni kiriting:")
-// console.log(userName);
+const personalNewsDB = {
+  count: numberOfNews,
+  news: {},
+  actors: {},
+  genres: [],
+  private: false,
+};
 
-// const answers = [];
-// answers[0] = prompt("Ismingiz?");
-// answers[1] = prompt("Familiyangiz?");
-// answers[2] = prompt("Yoshingiz?");
+const a = prompt("Oxirgi ko'rgan yangiliklaringizdan biri?"),
+      b = prompt("Unga qancha baho bergan bo'lardingiz");
 
-// console.log(answers);
-
-// const firstName = "Uktam";
-// const age = 38;
-// // ma'lumotlarni quyidagidek qilib yozish "interpolatsiya" deyiladi
-// console.log(`Mening's ismim ${firstName} va yoshim ${age}.`);
-
-let x = 10;
-console.log(x--);
-console.log(x);
+personalNewsDB.news[a] = b;
+console.log(personalNewsDB);
